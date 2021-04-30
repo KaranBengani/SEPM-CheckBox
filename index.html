@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>CheckBox</title>
+
+    <!-- CSS -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+
+    <link rel="stylesheet" href="../css/media-queries.css" />
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="assets/ico/apple-touch-icon-114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/ico/apple-touch-icon-72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/ico/apple-touch-icon-57-precomposed.png"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style1.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <!-- close sidebar menu -->
+        <div class="dismiss">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <div class="logo">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+        <img src="./assets/user.png" alt="" class="imguser" />
+        <p>Username</p>
+        <div class="stopwatch mt-5 mb-5">
+          <div class="circle">
+            <span class="time" id="display">00:00:00</span>
+          </div>
+
+          <div class="controls">
+            <button class="buttonPlay">
+              <img id="playButton" src="./assets/play-button.svg" />
+
+              <img id="pauseButton" src="./assets/pause-button.svg" />
+            </button>
+
+            <button class="buttonReset">
+              <img id="resetButton" src="./assets/reset-button.svg" />
+            </button>
+          </div>
+        </div>
+        <!-- <ul class="list-unstyled menu-elements">
+          <li class="active">
+            <a class="scroll-link" href="#top-content"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-1"
+              ><i class="fas fa-cog"></i> What we do</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-2"
+              ><i class="fas fa-user"></i> About us</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-5"
+              ><i class="fas fa-pencil-alt"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-6"
+              ><i class="fas fa-envelope"></i> Contact us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#otherSections"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              role="button"
+              aria-controls="otherSections"
+            >
+              <i class="fas fa-sync"></i>Other sections
+            </a>
+            <ul class="collapse list-unstyled" id="otherSections">
+              <li>
+                <a class="scroll-link" href="#section-3">Our projects</a>
+              </li>
+              <li>
+                <a class="scroll-link" href="#section-4">We think that...</a>
+              </li>
+            </ul>
+          </li>
+        </ul> -->
+      </nav>
+
+      <div class="content">
+        <!-- open sidebar menu -->
+        <a
+          class="btn btn-primary btn-customized open-menu"
+          href="#"
+          role="button"
+        >
+          <i class="fas fa-align-left"></i> <span>Profile</span>
+        </a>
+        <section class="main container">
+          <section class="todos">
+            <header>
+              <input type="text" placeholder="Enter an activity.." id="item" />
+              <button id="add">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      class="fill"
+                      d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </header>
+
+            <div class="container">
+              <!-- Uncompleted tasks -->
+              <ul class="todo" id="todo"></ul>
+
+              <!-- Completed tasks -->
+              <ul class="todo" id="completed"></ul>
+            </div>
+
+            <!-- JavaScripts -->
+          </section>
+
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_281NDP.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            class="img1"
+            autoplay
+          ></lottie-player>
+        </section>
+
+        <section class="main container">
+          <section class="calendar">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;showTitle=0&amp;showTz=0"
+              style="border-width: 0"
+              width="600"
+              height="500"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </section>
+          <lottie-player
+            src="https://assets6.lottiefiles.com/packages/lf20_ihsy8p2a.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 300px"
+            loop
+            class="img1"
+            autoplay
+          ></lottie-player>
+        </section>
+      </div>
+      <!-- End content -->
+    </div>
+    <!-- End wrapper -->
+
+    <!-- Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-migrate-3.0.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.backstretch.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

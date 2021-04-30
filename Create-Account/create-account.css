@@ -1,0 +1,50 @@
+:root {
+  --black: #1a1a1d;
+  --grey: #4e4e50;
+  --maroon: #6f2232;
+  --darkred: #950740;
+  --red: #c3073f;
+}
+body {
+  background-color: var(--black) !important;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  background-color: transparent;
+  height: 100vh;
+  margin: auto 0;
+  color: #fff;
+}
+
+.jumbotron h1 {
+  color: var(--red);
+  text-transform: capitalize;
+}
+
+.button {
+  border: 3px solid var(--red);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.border {
+  border: 3px solid var(--grey);
+  padding: 2%;
+  border-radius: 12px;
+  width: 75vw;
+}
+
+.button:hover {
+  color: var(--red);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.img1 {
+  margin-right: 20% !important;
+}
