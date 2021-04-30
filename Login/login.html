@@ -47,14 +47,16 @@
                     required
                   />
                 </div>
-                <button
-                  data-toggle="modal"
-                  data-target="#exampleModal"
+                <a
+                  href="../index.html"
                   type="submit"
                   class="btn btn-block button"
+                  onclick="savedata()"
                 >
                   Login
-                </button>
+                </a>
+                <!-- data-toggle="modal"
+                  data-target="#exampleModal" -->
               </form>
               <div class="text-center">
                 <p>or..</p>
@@ -102,7 +104,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">You have succesfully wasted your time</div>
+          <div class="modal-body">Login Succesfull</div>
           <div class="modal-footer">
             <!-- <button
               type="button"
@@ -129,5 +131,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/auth.js"></script>
   </body>
 </html>
